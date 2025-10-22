@@ -32,7 +32,7 @@ target_include_directories(ADTChase PRIVATE
 #Link Raylib
 target_link_libraries(ADTChase PRIVATE k08 raylib)
 
-//Copies assets folder next to the exe after build
+#Copies assets folder next to the exe after build
 add_custom_command(TARGET ADTChase POST_BUILD
   COMMAND ${CMAKE_COMMAND} -E copy_directory
           ${CMAKE_SOURCE_DIR}/assets
