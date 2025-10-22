@@ -1,0 +1,26 @@
+{
+  "version": 4,
+  "configurePresets": [
+    {
+      "name": "win-msvc",
+      "generator": "Visual Studio 17 2022",
+      "architecture": { "value": "x64" },
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_TARGET_TRIPLET": "x64-windows"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "win-debug",
+      "configurePreset": "win-msvc",
+      "configuration": "Debug"
+    },
+    {
+      "name": "win-release",
+      "configurePreset": "win-msvc",
+      "configuration": "Release"
+    }
+  ]
+}

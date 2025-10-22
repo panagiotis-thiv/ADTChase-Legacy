@@ -1,0 +1,17 @@
+/build/
+/.vs/
+/CMakeFiles/
+/CMakeCache.txt
+/x64
+**/x64/
+.vs/
+*.obj
+*.o
+*.a
+*.lib
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+/modules/*.lib
+/lib
